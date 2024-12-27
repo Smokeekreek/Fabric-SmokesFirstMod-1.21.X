@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "smokesfirstmod",
+	"version": "${version}",
+	"name": "Smokes First Mod",
+	"description": "Smokeekreek's first Minecraft Mod.",
+	"authors": [
+		"Smokeekreek"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Smokeekreek"
+	},
+	"license": "MIT",
+	"icon": "assets/smokesfirstmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.smokeekreek.smokesfirstmod.SmokesFirstMod"
+		],
+		"fabric-datagen": [
+			"net.smokeekreek.smokesfirstmod.SmokesFirstModDataGenerator"
+		],
+		"Client": [
+			"net.smokeekreek.smokesfirstmod.SmokesFirstModClient"
+		]
+	},
+	"mixins": [
+		"smokesfirstmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
